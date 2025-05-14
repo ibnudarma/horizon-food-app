@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:horizon_food_app/pages/home_page.dart';
+import 'package:horizon_food_app/pages/onboarding_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Horizon Food',
-      home: HomePage(),
+      home: OnboardingPage(),
     );
   }
 }
