@@ -20,6 +20,15 @@ class RegisterPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                const SizedBox(height: 20),
+                Center(
+                  child: Image.asset(
+                    'assets/horizon.jpg',
+                    width: 200,
+                    height: 200,
+                  ),
+                ),
+                const SizedBox(height: 20),
                 // Input Nama Lengkap
                 TextField(
                   controller: nameController,

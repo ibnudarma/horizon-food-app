@@ -20,11 +20,10 @@ class OnboardingPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        const SizedBox(height: 40),
-
+                        const SizedBox(height: 80),
                         // Gambar/logo
                         Image(image: AssetImage('assets/horizon.jpg')),
-
+                        const SizedBox(height: 40),
                         // Teks selamat datang
                         Text(
                           'Selamat datang di Horizon Food',
@@ -50,7 +49,7 @@ class OnboardingPage extends StatelessWidget {
 
                         // Tombol navigasi
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 40),
+                          padding: const EdgeInsets.only(bottom: 150),
                           child: ElevatedButton(
                             onPressed: () {
                               Navigator.push(

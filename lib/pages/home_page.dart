@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'menu_page.dart';
+import 'kantin_page.dart';
+import 'order_page.dart';
+import 'riwayat_page.dart';
+import 'profil_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -10,11 +15,11 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _searchController = TextEditingController();
 
   final List<Widget> _pages = [
-    Center(child: Text("Menu")),
-    Center(child: Text("Kantin")),
-    Center(child: Text("Order")),
-    Center(child: Text("Riwayat")),
-    Center(child: Text("Profil")),
+    MenuPage(),
+    KantinPage(),
+    OrderPage(),
+    RiwayatPage(),
+    ProfilPage(),
   ];
 
   @override
@@ -27,7 +32,7 @@ class _HomePageState extends State<HomePage> {
           controller: _searchController,
           style: TextStyle(color: Colors.white),
           decoration: InputDecoration(
-            hintText: 'Cari makanan...',
+            hintText: 'Mau makan apa hari ini?',
             hintStyle: TextStyle(color: Colors.white70),
             border: InputBorder.none,
             icon: Icon(Icons.search, color: Colors.white),

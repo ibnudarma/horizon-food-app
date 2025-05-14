@@ -17,6 +17,7 @@ class LoginPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                const SizedBox(height: 100),
                 // Logo di tengah atas
                 Center(
                   child: Image.asset(
@@ -25,7 +26,7 @@ class LoginPage extends StatelessWidget {
                     height: 200,
                   ),
                 ),
-
+                const SizedBox(height: 50),
                 // Input Email
                 TextField(
                   controller: emailController,
